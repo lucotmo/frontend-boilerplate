@@ -1,0 +1,27 @@
+extends ../includes/layout.pug
+include ../includes/components/image_webp.pug
+
+block metatags
+  -var title = 'Frontend boilerplate'
+  -var description = 'Boilerplate para el desarrollo de proyectos Frontend'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main
+    .container
+      h1.center= title
+    .row
+      .col.s3
+        h5.center imagen jpg
+        +imageWebp('renderizado')
+      .col.s3
+        h5.center imagen png
+        img.responsive-img(src='images/producto-soda.png', alt='')
+      .col.s3
+        h5.center imagen svg
+        img.responsive-img(src='images/lucotmo.svg', alt='')
+      .col.s3
+        h5.center imagen gif
+        img.responsive-img(src='images/lucotmo.gif', alt='')
+
