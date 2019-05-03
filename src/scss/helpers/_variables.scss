@@ -1,5 +1,10 @@
 /* ********** Custom Properties ********** */
 :root {
+  /* typographical fonts */
+  --main-font: 'camingocodebold', sans-serif;
+  --alternate-font: 'camingocoderegular', sans-serif;
+
+  /* Background Colors */
   --main-color: #FFF;
   --main-modal-color: rgb(255, 255, 255, .75);
   --second-color: #FFEF48;
@@ -13,12 +18,14 @@
   --bg-alternate-modal-color: rgba(153, 153, 153, .75);
   --border-color: #DDD;
 
+  /* Text Colors */
   --text-color: #242424;
   --title-color: #333;
 
   --link-color: var(--alternate-color);
   --link-hover-color: var(--alternate-modal-color);
 
+  /* max width and header height */
   --max-width: 1200px;
   --header-height: 5rem;
 
